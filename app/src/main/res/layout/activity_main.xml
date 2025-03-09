@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- ImageView para mostrar la imagen -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/imagendeljuego"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop" />
+
+
+    <!-- TextView para mostrar la pregunta -->
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Is this image real or fake?"
+        android:textSize="18sp"
+        android:textAlignment="center" />
+
+    <!-- Botón para la opción "Real" -->
+    <Button
+        android:id="@+id/buttonReal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Real" />
+
+    <!-- Botón para la opción "Fake" -->
+    <Button
+        android:id="@+id/buttonFake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonReal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Fake" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Haz clic aquí!"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp" />
+
+
+
+</RelativeLayout>
